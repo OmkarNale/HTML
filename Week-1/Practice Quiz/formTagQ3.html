@@ -1,0 +1,35 @@
+<!-- Q No: 1
+Create a web page with an input elements that take
+phone number
+OTP (should not show up on screen while typing)
+Give some text, before each input element, describing the kind of input expected form the user. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form</title>
+</head>
+<body>
+    
+    <div style="border: 2px solid black;background-color: gray; margin: 300px 450px;width: 500px;">
+        <form action="../message.html">
+        <h1 style="text-align: center;">Form</h1>
+
+        <label for="Mobile_No" style="padding-left:100px;">Mobile No :</label>
+        <input type="tel" name="mobile" id="Mobile_No" max="10" style="margin-bottom: 10px;">
+
+        <br>
+
+        <label for="Otp" style="padding-left:100px;" >OTP :</label>
+        <input type="password" name="Otp" id="Otp" style="width: 100px;margin-left: 40px;" >
+
+        <br>
+
+        <button type="submit" onclick="alert('mobile No is verified !')" style="width: 200px ; margin: 20px 120px;">Click.</button>
+    </form>
+    </div>
+</body>
+</html>
