@@ -1,0 +1,35 @@
+<!-- Create a web page with a form with labelled and named input elements that take
+phone number
+OTP (should not show up on screen while typing)
+Make sure the form when submitted makes a request for the url /login.
+
+(you may already have created this page in a previous exercise)
+
+ 
+
+Now, make sure the OTP does not appear in the URL when the form is submitted. It should instead be part of the request body. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile & otp</title>
+</head>
+<body>
+    
+    <form action="../message.html" method="post">
+        
+        <label for="MobileNo">Mobile No :</label>
+        <input type="tel" name="mobile_number" id="MobileNo">
+        <br>
+        <label for="otp">OTP :</label>
+        <input type="number" name="otp" id="otp">
+        <br>
+        <input type="submit" value="submit">
+        
+    </form>
+
+</body>
+</html>
