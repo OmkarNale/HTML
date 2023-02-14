@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,60 +8,91 @@
     <title>Problem Statment - 1</title>
 
     <style>
-        label,input{
-            margin-bottom: 20px;
+        header,footer {
+            height: 50px;
+            background-color: aqua;
+            text-align: center;
         }
     </style>
 </head>
-<body>
-    
-    <h1> Problem Statment - 1  Create a HTML web page with following details! </h1>
 
-        <div class="1">
+<body>
+
+    <header>
+        <h1> Problem Statment - 1 Create a HTML web page with following details! </h1>
+    </header>
+
+    <div class="1">
 
         <h1>1 1. Form with below functionalities
         </h1>
         <p>
-            i. Form with name, email and phone number are well aligned along with their input element. 
+            i. Form with name, email and phone number are well aligned along with their input element.
             <br>
             ii. Include a radio button question into the form.
             <br>
-            iii. Include a drop down options with select tag. 
+            iii. Include a drop down options with select tag.
             <br>
             iv. Include a submit button.
         </p>
 
-            <form action="../message.html" method="post">
+        <form action="../message.html" method="post">
 
-                <label for="Name">Name :</label>
-                <input type="text" name="Name" id="Name" style="margin-left: 50px;"><br>
+            <table>
 
-                <label for="Email">Email :</label>
-                <input type="email" name="Eamil" id="Email" style="margin-left: 51px;"><br>
+                <tr>
+                    <td><label for="Name">Name :</label></td>
+                    <td><input type="text" name="Name" id="Name"></td>
+                </tr>
 
-                <label for="tel">MOobile No :</label>
-                <input type="tel" name="tel" id="tel" style="margin-left: 9px;"><br>
+                <tr>
+                    <td><label for="Email">Email :</label></td>
+                    <td><input type="email" name="Eamil" id="Email"></td>
+                </tr>
 
-                <label for="gender">Gender :</label>
-                <label for="male" style="margin-left: 42px;">Male</label>
-                <input type="radio" name="Gender" id="male" value="male">
-                <label for="female">Female</label>
-                <input type="radio" name="Gender" id="female" value="female"><br>
+                <tr>
+                    <td><label for="tel">Mobile No :</label></td>
+                    <td><input type="tel" name="tel" id="tel"></td>
+                </tr>
 
-                <label for="city">City</label>
-                <select name="city" id="city" style="margin-left: 69px;">
-                    <option value="select city">select city</option>
-                    <option value="PUNE">PUNE</option>
-                    <option value="MUMBAI">MUMBAI</option>
-                    <option value="AURANGABAD">AURANGABAD</option>
-                </select>
-                <br>
-                <input type="submit" value="Submit" style="margin-top: 20px; width: 100px;">
+                <tr>
+                    <td>
+                        <label for="gender">Gender :</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="Gender" id="male" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" name="Gender" id="female" value="female">
+                        <label for="female">Female</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="city">City :</label>
+                    </td>
+                    <td>
+                        <select name="city" id="city">
+                            <option value="select city">select city</option>
+                            <option value="PUNE">PUNE</option>
+                            <option value="MUMBAI">MUMBAI</option>
+                            <option value="AURANGABAD">AURANGABAD</option>
+                        </select>
+                    </td>
+                </tr>
 
-            </form>
-        </div>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        <input type="submit" value="Submit" style="margin-top: 20px; width: 100px;">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
     <hr>
-    
+
     <div class="2">
 
         <h1>2 - 2. Include Iframe with external web page link and your own html page link.
@@ -68,14 +100,14 @@
 
         <a href="https://www.google.com" target="_blank"> google.com </a>
         <br>
-        <iframe src="https://www.wikipedia.org/" frameborder="0" width="500px" height="500px"></iframe>
+        <iframe src="https://www.wikipedia.org/" frameborder="2" width="500" height="700"></iframe>
         <br>
         <iframe src="Problem_Statment_1.html" frameborder="0" width="500px" height="500px"></iframe>
 
     </div>
 
     <hr>
-    
+
     <div class="3">
         <h2> 3 - 3. Input Video and Audio tag with functionalities like controls, muted and autoplay. </h2>
 
@@ -93,7 +125,11 @@
         </fieldset>
     </div>
     <hr>
-    
 
+
+    <footer>
+        <h1>End of Problem Problem_Statment_1</h1>
+    </footer>
 </body>
+
 </html>
