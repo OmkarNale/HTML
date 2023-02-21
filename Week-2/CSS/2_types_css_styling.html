@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Types of Css Styling </title>
+
+    <!-- this one for external Styling -->
+    <link rel="stylesheet" href="external_css.css">
+
+    <!-- this one for Internal CSS Styling -->
+    <style>
+        .demo {
+            color: blueviolet;
+            border: 3px dotted red;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h3> In-line CSS Styling </h3>
+    <p style="color: red; border: 3px solid black;"> 
+        An inline style may be used to apply a unique style for a single element.
+
+        To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+    </p>
+
+    <h3> Internal CSS Styling </h3>
+    <p class="demo"> 
+        An internal style sheet may be used if one single HTML page has a unique style.
+
+        The internal style is defined inside the "style" element, inside the "head" section.
+    </p>
+
+    <h3> External CSS Styling </h3>
+    <p class="test"> 
+        With an external style sheet, you can change the look of an entire website by changing just one file!
+
+        Each HTML page must include a reference to the external style sheet file inside the "link" element, inside the head section.
+    </p>
+
+</body>
+</html>
