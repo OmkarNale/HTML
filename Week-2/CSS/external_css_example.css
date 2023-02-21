@@ -1,0 +1,35 @@
+body {
+    background-color: plum;
+    padding: 0%;
+    margin: 0%;
+}
+h1{
+    color: blue;
+    text-align: center;
+    font-size: 50px;
+}
+nav{
+
+    border: 1px solid black;
+    padding-left: 10px;
+    padding: 10px;
+}
+a {
+    padding: 10px;
+    text-decoration: none;
+}
+
+table, th, tr, td {
+
+    border: 1px solid red;
+    border-collapse: collapse;
+    padding: 30px;
+    margin: 5%;
+}
+
+th {
+    background-color: gray;
+}
+tr, td {
+    background-color: wheat;
+}

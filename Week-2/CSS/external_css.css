@@ -1,3 +1,17 @@
+*{
+    background-color: thistle;
+}
+
+h1 {
+
+    color: blue;
+    text-align: center;
+}
+div {
+    border: 1px solid red;
+    color: yellowgreen;
+    padding: 10px;
+}
 .test{
     color: #dc143c;
     border: 5px dashed pink;
