@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Non inherited Properties  </title>
+</head>
+<body>
+    
+    <h1>CSS Non inherited Properties </h1>
+    <h4>border and margine like some css property are not inherited </h4>
+    
+    <div style="color: yellowgreen;border: 1px solid red;margin: 2px;">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt aut dicta modi dolorem quam dolor iste quod non aliquid sed, architecto harum atque quae unde. Neque incidunt ab sunt impedit modi voluptatibus facilis consequatur, quaerat odit temporibus aliquam molestiae corporis, maxime in, quia asperiores laudantium illum deleniti quas sit libero?
+
+        <p style="color: crimson;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi asperiores eaque veniam consectetur voluptas perspiciatis natus, modi ratione? Quae accusamus hic sed deserunt eius, in impedit vitae maiores architecto, vel non. Nemo magnam porro eos illum beatae a eveniet dolorum nobis aliquid odit cumque tempore eum sed, iure cum. Praesentium animi molestias minima deleniti pariatur, ducimus dolores sequi explicabo.
+            <span style="color: black;">THIS ONE SPAN</span>
+
+        </p>
+    </div>
+<hr>
+
+    <h4>border and margine like some css property are not inherited but we can forced fullyed inherit them using css_property : inherit;</h4>
+    
+    <div style="color: yellowgreen;border: 1px solid red;margin: 2px;">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt aut dicta modi dolorem quam dolor iste quod non aliquid sed, architecto harum atque quae unde. Neque incidunt ab sunt impedit modi voluptatibus facilis consequatur, quaerat odit temporibus aliquam molestiae corporis, maxime in, quia asperiores laudantium illum deleniti quas sit libero?
+
+        <p style="color: crimson; border: inherit; margin: inherit;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi asperiores eaque veniam consectetur voluptas perspiciatis natus, modi ratione? Quae accusamus hic sed deserunt eius, in impedit vitae maiores architecto, vel non. Nemo magnam porro eos illum beatae a eveniet dolorum nobis aliquid odit cumque tempore eum sed, iure cum. Praesentium animi molestias minima deleniti pariatur, ducimus dolores sequi explicabo.
+            <span style="color: black; border: inherit;margin: inherit;">THIS ONE SPAN</span>
+
+        </p>
+    </div>
+<hr>
+
+    <h4>we can provvide initial value to css property by using css_property : initial;</h4>
+    <h4>every css property has some initial value we just say them with this to used that one</h4>
+    
+    <div style="color: yellowgreen;border: 1px solid red;margin: 2px;">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt aut dicta modi dolorem quam dolor iste quod non aliquid sed, architecto harum atque quae unde. Neque incidunt ab sunt impedit modi voluptatibus facilis consequatur, quaerat odit temporibus aliquam molestiae corporis, maxime in, quia asperiores laudantium illum deleniti quas sit libero?
+
+        <p style="color: initial; border: inherit; margin: inherit;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi asperiores eaque veniam consectetur voluptas perspiciatis natus, modi ratione? Quae accusamus hic sed deserunt eius, in impedit vitae maiores architecto, vel non. Nemo magnam porro eos illum beatae a eveniet dolorum nobis aliquid odit cumque tempore eum sed, iure cum. Praesentium animi molestias minima deleniti pariatur, ducimus dolores sequi explicabo.
+            <span style="color: black; border: inherit;margin: initial;">THIS ONE SPAN</span>
+
+        </p>
+    </div>
+
+</body>
+</html>

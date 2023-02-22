@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Cascade basics
+    </title>
+
+    <!-- this first style box which applyed accrding to rule of Cascade -->
+    <style>
+        /* 1st style for p tag applyed firest time */
+        p {
+            color: red;
+        }
+
+        /* second style for p tag applyed after first style */
+        p {
+            color: violet;
+        }
+    </style>
+
+    <!-- this second style box which applyed accrding to rule of Cascade -->
+    <style>
+        /* third style for p tag applyed firest time */
+        p {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> CasCad basics </h1>
+
+    <!-- this third style box which applyed accrding to rule of Cascade -->
+    <style>
+        /* fourth style for p tag applyed firest time */
+        p {
+            color: yellowgreen;
+        }
+    </style>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint architecto, illum esse incidunt excepturi
+        assumenda obcaecati. Repellat incidunt ut corrupti, doloremque ex explicabo nemo labore quia, magni voluptatem
+        recusandae quos.
+    </p>
+
+      <!-- this fourth style box which applyed accrding to rule of Cascade -->
+      <style>
+        /* fifith style for p tag applyed firest time */
+        p {
+            color: orange;
+        }
+    </style>
+
+</body>
+
+</html>
