@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Complex seletor from using simple selector </title>
+
+    <style>
+        div ul > li {
+            cursor: pointer;
+        }
+
+        div ul > li.highlight:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus provident aut doloremque in sequi corporis a error. Voluptas veniam exercitationem, eos vel tenetur minus, placeat reiciendis, quos dolor enim iure!
+
+        <ul>
+            <li>Item</li>
+            <li class="highlight">Item</li>
+            <li>Item</li>
+        </ul>
+    </div>
+
+    <ul>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+    
+</body>
+</html>

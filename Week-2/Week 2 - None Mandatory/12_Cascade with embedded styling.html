@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascade with embedded styling</title>
+
+    <style>
+        /* this apply firest */
+        p{
+            color: red;
+        }
+        /* this apply second */
+        p{
+            color: yellow;
+        }
+    </style>
+
+    <style>
+        /* this apply third */
+        p{
+            color: aquamarine;
+        }
+    </style>
+
+</head>
+<body>
+    <style>
+        /* this apply fourth */
+        p{
+            color: blueviolet;
+        }
+    </style>
+    <h1>Cascade with embedded styling</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint accusamus dolore dignissimos commodi ea! Adipisci illum soluta quibusdam ipsa assumenda repellendus laudantium neque perferendis sint odio laborum commodi, quas non sunt tempora! Dolore sapiente dolorem accusantium, pariatur dolores ex placeat mollitia repudiandae architecto fuga minima nulla cupiditate, nesciunt, provident quia!
+    </p>
+
+    <style>
+        /* this apply fifith  : and final color which paragraph has*/
+        p{
+            color: gold;
+        }
+    </style>
+
+</body>
+</html>
