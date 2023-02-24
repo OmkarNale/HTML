@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascade with inline styling</title>
+    
+    <style>
+        p{
+            color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+    <style>
+        p{
+            color: orange;
+        }
+    </style>
+    <h1>Cascade with inline styling</h1>
+
+    <!-- inline style always apply beaucse it is has most importance  -->
+    <p style="color: red;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, nostrum amet eum fugiat soluta cumque dolorum eius unde veritatis minima modi alias cupiditate maxime molestias itaque aliquid nam voluptatum accusamus?
+    </p>
+    <style>
+        p{
+            color: purple;
+        }
+    </style>
+    <link rel="stylesheet" href="mycascad.css">
+</body>
+</html>
