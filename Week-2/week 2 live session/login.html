@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Problem Statement - 1 </title>
+
+    <style>
+
+        h2 {
+            text-align: left;
+        }
+
+        .login{
+            color: white;
+            width: 300px;
+            padding: 10px;
+            position: absolute;
+            font-size: 20px;
+            top: 10%;
+            right: 50px;
+            line-height: 50px;
+            border-radius: 10px;
+            background-color: transparent;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        input {
+            height: 30px;
+            width: 98%;
+            padding-left: 10px;
+            border-radius: 8px;
+        }
+
+        button {
+            margin-top: 10px;
+            width: 120px;
+            height: 50px;
+            padding: 5px;
+            float: right;
+            vertical-align: middle;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-radius: 10px;
+            background-color: rgb(67, 185, 67);
+        }
+
+        #myvideo {
+            position: fixed;
+            width: auto;
+            height: auto;
+        }
+        a {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<!--     
+    create a login page where the page containes
+    1. username
+    2.password
+    3.button to submit 
+    4. link to sign in page  -->
+
+    <video autoplay muted loop id="myvideo">
+        <source src="../pexels-mart-production-7566043.mp4" type="video/mp4">
+    </video>
+
+    <div class="login">
+        <h2>
+            Log-in here !
+        </h2>
+        <form action="Home.html" method="post">
+
+            <label for="username">Username :</label><br>
+            <input type="text" name="username" id="username" placeholder="Enter username here !" required>
+
+            <label for="password">password :</label>
+            <input type="password" name="username" id="password" minlength="8" placeholder="enter password here !" required>
+
+            <a href="signup.html"> sign up here !</a> 
+            <br>
+            <button type="submit">Submit</button>
+
+
+        </form>
+    </div>
+
+</body>
+</html>
