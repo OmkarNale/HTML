@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Combine Selector </title>
+
+    <style>
+        /* Descendant selector */
+        .menuStyling p {
+            color:rgb(65, 64, 64);
+            font-size: 14px;
+            font-style: italic;
+        }
+
+
+        .LoanStyling:active {
+            background-color: khaki;
+        }
+
+        .LoanStyling {
+            text-align: center;
+            margin-top: 10px;
+            padding: 10px;
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 10px;
+            width: 20%;
+            height: 200px;
+            background-color: rgb(61, 233, 99);
+            border: 2px solid peru;
+        }
+
+        /* 2. chile selector */
+        .LoanStyling > p {
+            color: rgb(226, 65, 37);
+        }
+
+        /* 3. Adjacent sibling selector */
+        #loansType + p {
+            color:rgb(233, 69, 0);
+        }
+
+        .InvestmentStyling{
+            text-align: center;
+            margin-top: 10px;
+            padding: 10px;
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 10px;
+            width: 20%;
+            height: 180px;
+            background-color: rgb(230, 95, 169);
+            border: 1px solid peru;
+        }
+        .InvestmentStyling:active {
+            background-color: slateblue;
+
+        }
+
+        /* 4. General sinling selector */
+        #InvestType ~ p {
+            color: rgb(186, 14, 238);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Combine Selector</h1>
+
+    <hr>
+
+    <div id="loansType">
+        <h2>Get the Instant Loan</h2>
+        <div class="LoanStyling">
+            <h3>HOME LOANS</h3>
+            <p><b>Basic Home LOAN</b></p>
+            <span><p>Home Conatruction Loan</p></span>
+            <p><b>Home Extention Loan</b></p>
+            <span><p>Pradhan Mantri Awas Yojana (PMAY)</p></span>
+        </div>
+        <div class="LoanStyling">
+            <h3>HOME LOANS</h3>
+            <p><b>Basic Home LOAN</b></p>
+            <span><p>Home Conatruction Loan</p></span>
+            <p><b>Home Extention Loan</b></p>
+            <span><p>Pradhan Mantri Awas Yojana (PMAY)</p></span>
+        </div>
+        <div class="LoanStyling">
+            <h3>HOME LOANS</h3>
+            <p><b>Basic Home LOAN</b></p>
+            <span><p>Home Conatruction Loan</p></span>
+            <p><b>Home Extention Loan</b></p>
+            <span><p>Pradhan Mantri Awas Yojana (PMAY)</p></span>
+        </div>
+        <div class="LoanStyling">
+            <h3>HOME LOANS</h3>
+            <p><b>Basic Home LOAN</b></p>
+            <span><p>Home Conatruction Loan</p></span>
+            <p><b>Home Extention Loan</b></p>
+            <span><p>Pradhan Mantri Awas Yojana (PMAY)</p></span>
+        </div>
+    </div>
+    <p><b>Teams and conditions apply</b></p>
+    <p>Plead red it carefully !</p>
+
+    <div id="InvestType">
+        <h1>Investments</h1>
+        <div class="InvestmentStyling">
+            <h3>Fixed Deposit</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </div>
+        <div class="InvestmentStyling">
+            <h3>Fixed Deposit</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </div>
+        <div class="InvestmentStyling">
+            <h3>Fixed Deposit</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </div>
+        <div class="InvestmentStyling">
+            <h3>Fixed Deposit</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </div>
+    </div>
+    <p><b>teams and condition apply</b></p>
+    <b>Please read it carefully !</b>
+    <p>
+        Happy Investments !
+    </p>
+</body>
+</html>

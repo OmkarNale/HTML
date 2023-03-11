@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample output :</title>
+
+    <style>
+        [class="para"] {
+            background-color: aqua;
+        }
+        [class~="demo"] {
+            background-color: burlywood;
+        }
+        [class^="new"] {
+            background-color: brown;
+        }
+        [class$="tt"] {
+            background-color: chartreuse;
+        }
+        [class|="omk"] {
+            background-color: orange;
+        }
+        [class*="zz"]{
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1> Attribute selector</h1>
+    <hr>
+    <div>
+        <h1>CSS [attribute="value"] Selector</h1>
+
+        <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.\</p>
+
+        <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.\</p>
+        
+        <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.\</p>
+        
+    </div>
+    <hr>
+    <div>
+        <h1>CSS [attribute~="value"] Selector</h1>
+
+        <p class="demo test">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.</p>
+
+        <p class="acd">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.\</p>
+        
+        <p class="para demo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.</p>
+        
+        <p class="demo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.</p>
+        
+        
+    </div>
+    <hr>
+    <div>
+        <h1>CSS [attribute^="value"] Selector</h1>
+
+        <p class="new-test">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.</p>
+
+        <p class="acd">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.\</p>
+        
+        <p class="new">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.</p>
+        
+        <p class="new-demo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.</p>
+
+        <p class="new_test">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.</p>
+        
+        <p class="new demo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.</p>
+        
+    </div>
+    <hr>
+    <div>
+        <h1>CSS [attribute$="value"] Selector</h1>
+
+        <p class="tt_est">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.</p>
+
+        <p class="acd-tt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.\</p>
+        
+        <p class="aa tt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.</p>
+        
+        <p class="tt-demo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.</p>
+
+        <p class="n_tt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.</p>
+        
+        <p class="tt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.</p>
+        
+    </div>
+    <hr>
+    <div>
+        <h1>CSS [attribute|="value"] Selector</h1>
+
+        <p class="omk-est">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.</p>
+
+        <p class="omk kk">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.\</p>
+        
+        <p class="omk_kk">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.</p>
+        
+        <p class="abc-omk">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.</p>
+
+        <p class="omk">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.</p>
+        
+    </div>
+    <hr>
+    <div>
+        <h1>CSS [attribute*="value"] Selector</h1>
+
+        <p class="zz-est">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.</p>
+
+        <p class="omk zz">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.\</p>
+        
+        <p class="omk_zz_kk">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.</p>
+        
+        <p class="abc-zz-omk">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.</p>
+
+        <p class="zz">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.</p>
+       
+        <p class="fhfn_zz">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dolore recusandae laborum corrupti minima veniam nesciunt in cum? Dolorum illo ex perspiciatis aliquam minima culpa adipisci vero voluptatem eum fuga.</p>
+        
+    </div>
+    <hr>
+</body>
+</html>

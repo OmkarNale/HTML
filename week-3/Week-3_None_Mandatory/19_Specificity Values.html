@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity Values</title>
+    <style>
+        /* (a,b,c,d) */
+        /* ([internal/external styling],[no of time id appears], [no of times class appears],[no of time type appears]) */
+        /* (0,0,0,2) */
+        ul > li {
+            cursor: pointer;
+        }
+        /* (0,0,1,3 ) */
+        div ul > li:hover{
+            background-color: aqua;
+        }
+        /* (0,0,2,4) */
+        /* this more specific then  ul > li.highligh:hover > span style */
+        div ul > li.highligh:hover > span {
+            background-color: brown;
+        }
+        /* (0,0,2,3) */
+        ul > li.highligh:hover > span {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>
+        how to calculate Specificity Values
+    </h1>
+
+    <h1>
+        (a,b,c,d)
+    </h1>
+    <p>a : inline styling if present then value is (1,0,0,0)</p>
+    <p>b : is for no of id used in that element it either n = 1, 2 ,3 ....ect (0,n,0,0)</p>
+    <p>c : is for no class used within that tag it either n = 1,2,3....ect (0,0,n,0)</p>
+    <p>d : is for no time type/tag appears it either n = 1,2,3....ect (0,0,0,n)</p>
+</body>
+</html>

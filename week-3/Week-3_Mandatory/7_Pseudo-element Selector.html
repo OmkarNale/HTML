@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-element Selector</title>
+</head>
+
+<body>
+
+    <h1>Pseudo-element Selector</h1>
+    <p>
+        A CSS pseudo-element is used to style specified parts of an element.
+
+        For example, it can be used to:
+    <ul>
+        <li>
+            Style the first letter, or line, of an element
+
+        </li>
+        <li>
+            Insert content before, or after, the content of an element
+
+        </li>
+    </ul>
+    </p>
+
+    <code>
+        Syntax
+        The syntax of pseudo-elements:
+        <hr>
+        selector::pseudo-element {<br>
+            property: value;<br>
+        }
+    </code>
+
+    <hr>
+    <h2>The ::first-line Pseudo-element</h2>
+    <p>
+        The ::first-line pseudo-element is used to add a special style to the first line of a text.
+
+        The following example formats the first line of the text in all p elements:
+    </p>
+    <code>
+        p::first-line {
+            color: #ff0000;
+            font-variant: small-caps;
+          }
+    </code>
+    <hr>
+    <p>Note: The ::first-line pseudo-element can only be applied to block-level elements.</p>
+    <hr>
+    <p>The following properties apply to the ::first-line pseudo-element:</p>
+    <ul>
+        <li>font properties</li>
+        <li>color properties</li>
+        <li>background properties</li>
+        <li>word-spacing</li>
+        <li>letter-spacing</li>
+        <li>text-decoration</li>
+        <li>vertical-align</li>
+        <li>text-transform</li>
+        <li>line-height</li>
+        <li>clear</li>
+    </ul>
+    <hr>
+    <p>
+        Notice the double colon notation - ::first-line versus :first-line
+        <br>
+        The double colon replaced the single-colon notation for pseudo-elements in CSS3. This was an attempt from W3C to
+        distinguish between pseudo-classes and pseudo-elements.
+        <br>
+        The single-colon syntax was used for both pseudo-classes and pseudo-elements in CSS2 and CSS1.
+        <br>
+        For backward compatibility, the single-colon syntax is acceptable for CSS2 and CSS1 pseudo-elements.
+    </p>
+    <hr>
+    <h2>The ::first-letter Pseudo-element</h2>
+    <p>
+        The ::first-letter pseudo-element is used to add a special style to the first letter of a text.
+
+        The following example formats the first letter of the text in all p elements:
+    </p>
+    <code>
+        Example <br>
+        p::first-letter { <br>
+          color: #ff0000;<br>
+          font-size: xx-large;<br>
+        } 
+    </code>
+    <hr>
+    <p>
+        <b> Note:</b> The ::first-letter pseudo-element can only be applied to block-level elements.
+    </p>
+    <hr>
+    <p>The following properties apply to the ::first-letter pseudo- element: </p>
+    <ul>
+        <li>font properties</li>
+        <li>color properties </li> 
+        <li>background properties</li> 
+        <li>margin properties</li> 
+        <li>padding properties</li>
+        <li>border properties
+        <li>text-decoration</li> 
+        <li>vertical-align (only if "float" is "none")</li> 
+        <li>text-transform</li> 
+        <li>line-height</li> 
+        <li>float</li> 
+        <li>clear</li>
+    </ul>
+    <hr>
+    <h2>CSS - The ::before Pseudo-element</h2>
+    <p>
+        The ::before pseudo-element can be used to insert some content before the content of an element.
+
+        The following example inserts an image before the content of each <h1> element:
+    </p>
+    <code>
+        Example <br>
+        h1::before { <br>
+            content: url(smiley.gif); <br>
+        }
+    </code>
+    <hr>
+    <h2>CSS - The ::after Pseudo-element</h2>
+    <p>
+        The ::after pseudo-element can be used to insert some content after the content of an element.
+
+        The following example inserts an image after the content of each <h1> element:
+    </p>
+    <code>
+        Example
+        h1::after {
+            content: url(smiley.gif);
+        }
+    </code>
+    <hr>
+    <h2>CSS - The ::marker Pseudo-element</h2>
+    <p>
+        The ::marker pseudo-element selects the markers of list items.
+
+        The following example styles the markers of list items:
+    </p>
+    <code>
+        Example <br>
+        ::marker { <br>
+            color: red;<br>
+            font-size: 23px;<br>
+        }
+    </code>
+    <hr>
+    <h2>
+        CSS - The ::selection Pseudo-element
+    </h2>
+    <p>
+        The ::selection pseudo-element matches the portion of an element that is selected by a user.
+
+        The following CSS properties can be applied to ::selection: color, background, cursor, and outline.
+
+        The following example makes the selected text red on a yellow background:
+    </p>
+    <code>
+        Example <br>
+        ::selection { <br>
+            color: red; <br>
+            background: yellow; <br>
+        }
+    </code>
+</body>
+
+</html>

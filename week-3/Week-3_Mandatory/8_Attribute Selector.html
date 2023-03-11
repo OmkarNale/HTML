@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>CSS Attribute Selectors</h1>
+    <hr>
+    <h2>Style HTML Elements With Specific Attributes</h2>
+    <hr>
+    <p>It is possible to style HTML elements that have specific attributes or attribute values.</p>
+    <hr>
+    <h2>CSS [attribute] Selector</h2>
+    <p>
+        The [attribute] selector is used to select elements with a specified attribute.
+    </p>
+    <p>
+        The following example selects all <a> elements with a target attribute:
+    </p>
+    <code>
+        Example  <br>
+        a[target] {<br>
+            background-color: yellow;<br>
+        }
+    </code>
+    <hr>
+    <hr>
+    <h2>CSS [attribute="value"] Selector</h2>
+    <p>
+        The [attribute="value"] selector is used to select elements with a specified attribute and value.
+        <br>
+        The following example selects all <a> elements with a target="_blank" attribute:
+    </p>
+    <code>
+        Example <br>
+        a[target="_blank"] { <br>
+            background-color: yellow; <br>
+        }
+    </code>
+    <hr>
+    <h2>CSS [attribute~="value"] Selector</h2>
+    <p>
+        The [attribute~="value"] selector is used to select elements with an attribute value containing a specified
+        word.
+
+        The following example selects all elements with a title attribute that contains a space-separated list of words,
+        one of which is "flower":
+    </p>
+    <code>
+        Example <br>
+        [title~="flower"] { <br>
+            border: 5px solid yellow; <br>
+        }
+    </code>
+    <hr>
+    <p>
+        The example above will match elements with title="flower", title="summer flower", and title="flower new", but
+        not title="my-flower" or title="flowers".
+    </p>
+    <hr>
+    <h2>CSS [attribute|="value"] Selector</h2>
+    <p>
+        The [attribute|="value"] selector is used to select elements with the specified attribute, whose value can be
+        exactly the specified value, or the specified value followed by a hyphen (-).
+        <br>
+        <b>Note:</b>The value has to be a whole word, either alone, like class="top", or followed by a hyphen( - ), like
+        class="top-text".
+    </p>
+    <code>
+        Example <br>
+        [class|="top"] { <br>
+            background: yellow; <br>
+        }
+    </code>
+    <hr>
+    <h2>CSS [attribute^="value"] Selector </h2>
+    <p>
+        The [attribute^="value"] selector is used to select elements with the specified attribute, whose value starts
+        with the specified value.
+        <br>
+        The following example selects all elements with a class attribute value that starts with "top":
+        <br>
+        <b> Note: </b> The value does not have to be a whole word!
+    </p>
+    <code>
+        Example <br>
+        [class^="top"] { <br>
+            background: yellow; <br>
+        }
+    </code>
+    <hr>
+
+    <h2>CSS [attribute$="value"] Selector </h2>
+    <p>
+        The [attribute$="value"] selector is used to select elements whose attribute value ends with a specified value.
+        <br>
+        The following example selects all elements with a class attribute value that ends with "test":
+        <br>
+        <b>Note:</b> The value does not have to be a whole word!
+    </p>
+    <code>
+        Example <br>
+        [class$="test"] {   <br>
+            background: yellow; <br>
+        }
+    </code>
+    <hr>
+    <h2>CSS [attribute*="value"] Selector</h2>
+    <p>
+        The [attribute*="value"] selector is used to select elements whose attribute value contains a specified value.
+
+        The following example selects all elements with a class attribute value that contains "te":
+
+        <b>Note:</b> The value does not have to be a whole word!
+    </p>
+    <code>
+        Example <br>
+        [class*="te"] { <br>
+            background: yellow; <br>
+        }
+    </code>
+    <hr>
+    
+</body>
+
+</html>

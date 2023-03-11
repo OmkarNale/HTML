@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structural Pseudo Classes </title>
+
+    <style>
+        /* first child of specific element or selector */
+        a:first-child{
+            background-color: olive;
+        }
+        /* none of p tag is first child  */
+        /* this means that paragraph which first child */
+        p:first-child{
+            color: olive;
+
+        }
+        /* p space : pseudo class -> select the first child that lies withen some paragraph */
+        p :first-child{
+            background-color: aqua;
+        }
+
+        body :nth-child(2){
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>
+        Structural Pseudo Classes
+    </h1>    
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam earum harum, nobis itaque saepe hic sunt asperiores
+        <a href="https://www.google.com">Google search</a>
+
+        <a href="https://www.google.com" target="_blank">Google Search</a>
+        accusantium ab ducimus minus laudantium sequi alias quibusdam deleniti obcaecati rem facere quo.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse nesciunt in nostrum voluptatum numquam, rerum magni sint! Debitis ratione, officia, voluptas quidem eos consectetur reprehenderit iste atque, aspernatur labore commodi?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, ratione quo! Deleniti, voluptates. Distinctio fuga ipsam expedita provident eaque quaerat similique iure. Iure saepe itaque accusamus explicabo quia est a!
+    </p>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, vero recusandae? Nisi maxime aperiam nihil at nam, 
+        <span>Span 1</span>
+        <a href="https://www.facebook.com">facebook.com</a>
+        <span>Span 2</span>
+        facilis odio corporis doloribus, et deleniti error laboriosam corrupti! Incidunt adipisci et non!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, rerum id. Sapiente explicabo sed inventore. Reprehenderit fugiat officiis quam corporis praesentium, eligendi deleniti commodi recusandae sit nisi excepturi maxime ipsam?
+    </p>
+</body>
+</html>

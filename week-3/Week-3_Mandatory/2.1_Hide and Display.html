@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hide and Display  </title>
+
+    <style>
+
+        .A,.C,.E {
+            background-color: burlywood;
+            border: 1px solid green;
+        }
+        .B {
+            display: none;
+        }
+        .A:hover + .B{
+            display: block;
+        }
+        .D {
+            visibility: hidden;
+        }
+        .C:hover + .D {
+            visibility: visible;
+        }
+        .F{
+            visibility: collapse;
+        }
+        .E:hover + .F {
+            visibility: visible;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1> Hide and Display </h1>
+    
+    <p class="A">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laudantium deserunt accusantium eligendi voluptatum quaerat odit esse unde incidunt a autem perspiciatis nesciunt mollitia id, sunt vel! Optio, perspiciatis officiis.
+    </p>
+
+    <p class="B">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laudantium deserunt accusantium eligendi voluptatum quaerat odit esse unde incidunt a autem perspiciatis nesciunt mollitia id, sunt vel! Optio, perspiciatis officiis.
+    </p>
+    <p class="C">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laudantium deserunt accusantium eligendi voluptatum quaerat odit esse unde incidunt a autem perspiciatis nesciunt mollitia id, sunt vel! Optio, perspiciatis officiis.
+    </p>
+    
+    <p class="D">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laudantium deserunt accusantium eligendi voluptatum quaerat odit esse unde incidunt a autem perspiciatis nesciunt mollitia id, sunt vel! Optio, perspiciatis officiis.
+    </p>
+    
+    <p class="E">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laudantium deserunt accusantium eligendi voluptatum quaerat odit esse unde incidunt a autem perspiciatis nesciunt mollitia id, sunt vel! Optio, perspiciatis officiis.
+    </p>
+    
+    <p class="F">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laudantium deserunt accusantium eligendi voluptatum quaerat odit esse unde incidunt a autem perspiciatis nesciunt mollitia id, sunt vel! Optio, perspiciatis officiis.
+    </p>
+    
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolore animi nesciunt cumque sapiente, quam fuga nisi placeat libero, tenetur praesentium voluptatum aperiam ipsam reprehenderit, enim illum iure deserunt sed.
+    </p>
+    
+</body>
+</html>

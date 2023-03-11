@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Specifity of Combination of Selectors</title>
+        <style>
+            ul > li {
+                cursor: pointer;
+            }
+            div ul > li:hover{
+                background-color: aqua;
+            }
+            /* this more specific then  ul > li.highligh:hover > span style */
+            div ul > li.highligh:hover > span {
+                background-color: brown;
+            }
+            ul > li.highligh:hover > span {
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h1>Specifity of Combination of Selectors</h1>
+        <hr>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dignissimos minus magnam repellendus consectetur odit! Sint iste nobis quaerat adipisci neque repellendus consequatur id repudiandae doloremque totam eveniet, impedit fugit incidunt, ipsam et quas delectus voluptas eos amet veniam corporis omnis. Molestiae nobis accusantium velit ullam eaque laudantium reprehenderit quis quibusdam voluptatem voluptatibus, vel iste suscipit enim at quia quas!
+
+            <ul>
+                <li>item - 1</li>
+                <li class="highligh"><span>item - 2</span></li>
+                <li>item - 3</li>
+            </ul>
+        </div>
+
+        <ul>
+            <li>item - 4</li>            
+            <li>item - 5</li>
+            <li>item - 6</li>
+        </ul>
+
+
+    </body>
+</html>
