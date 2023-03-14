@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selectors</title>
+
+    <style>
+
+        /* Descendant selectors(space) */
+        div a {
+            color: aqua;
+            text-decoration: none;
+            background-color: brown;
+        }
+        
+        /* Child selectors (>)*/
+        div > a {
+            background-color: darkcyan;
+            text-decoration: none;
+            
+        }
+
+        /* Adjacent Sibling selector (+) */
+        p + a {
+            background-color: chartreuse;
+            font-size: 50px;
+            color: purple;
+        }
+
+        /* General sibling selectors (~)*/
+        div ~ a {
+            background-color: green;
+            font-size: larger;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Combinator Selectors</h1>
+  
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam assumenda inventore, possimus, alias labore consectetur provident neque quidem blanditiis, ratione nam nulla animi. Rem ut laudantium enim, maxime quaerat culpa?
+        <a href="#">link 0</a>
+    </p>
+    <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. At quasi corporis a unde laborum. Vero rerum, vel hic ipsam corrupti, nihil perspiciatis provident ducimus distinctio qui et. Ipsa, odit ex?
+        <a href="#">link 1</a>
+        <a href="#">link 2</a>
+    </div>
+    <a href="#">some link</a>
+    <a href="#">some link</a>
+    <a href="#">some link</a>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, quidem. Similique pariatur soluta iusto tenetur laudantium, magni, unde nihil ipsa doloremque, veniam inventore repellendus. Id ratione in harum at reiciendis.
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ullam reiciendis rerum esse in dignissimos quia voluptates ab cumque. Nihil, dolor? Quisquam ex voluptates quis excepturi debitis tenetur? Tenetur, animi.
+        <a href="#">link 5</a>
+        <a href="#">some link</a>
+        <a href="#">some link</a>
+    </p>
+    <a href="#">link 6</a>
+</body>
+</html>

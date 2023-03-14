@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Electricity Board complaint form </title>
+        <style>
+            /* simple selector */
+            body {
+                background-color: rgb(253, 243, 223);
+            }
+            header {
+                border-radius: 5px;
+                height: auto;
+                text-align: center;
+                background-color: rgb(192, 149, 233);
+            }
+            footer {
+                margin-top: 70px;
+                margin-bottom: 70px;
+                background-color: rgb(192, 149, 233);
+            }
+            p, h1 {
+                padding: 10px;
+                margin: 0%;
+            }
+            section{
+                position: absolute;
+                top: 5%;
+                left: 25%;
+                width: 50%;
+            }
+            article {
+                min-width: 300px;
+                margin-top: 10px;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid steelblue;
+                background-color: white;
+            }
+            input {
+                width: 300px;
+                border: none;
+                background-color: white;
+                border-bottom: 1px solid gray;
+                height: 30px; 
+            }
+            input, label, p, #district {
+                font-size: 16px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            button {
+                display: block;
+                margin: 20px;
+                width: 80px;
+                border-radius: 4px;
+                height: 30px;
+                color: white;
+                font-size: 18px;
+                float: right;
+                border: none;
+                background-color: green;
+            }
+            #district {
+                height: 50px;
+            }
+            /* Combinator selector */
+            header p{
+                text-align: left;
+            }
+            article  p {
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                letter-spacing: 2px;
+            }
+            /* Pseudo selector */
+            input:focus{
+                outline-color: red;
+                background-color: burlywood;
+            }
+            /* Pseudo element selector */
+            header p::first-line{
+                font-weight: bold;
+                color: rgb(255, 0, 255);
+            }
+            article p::after{
+                content: "*";
+                color: red;
+            }
+
+            /* attribute selector */
+            input[name^="option"] {
+                width: 20px;
+                height: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <section>
+            <header>
+                <h1>Electricity Board complaint Form</h1>
+                <p>
+                    Read below instrictions beafore processing:
+                    <br />
+                    Make sure you will fill all the fileds where * is provided
+                </p>
+            </header>
+            <form action="" method="post">
+                <article>
+                    <p>Name :</p>
+                    <input type="text" title="name" required>
+                </article>
+                <article>
+                    <p>Meter ID :</p>
+                    <input type="number" required>
+                </article>
+                <article>
+                    <p>Phone No :</p>
+                    <input type="number" min="6000000000" max="999999999" required>
+                </article>
+                <article>
+                    <p>Email Id :</p>
+                    <input type="email" required>
+                </article>
+                <article>
+                    <h2>Address :</h2>
+                    <p>H:no</p>
+                    <input type="text" required>
+
+                    <p>Street</p>
+                    <input type="text" required>
+
+                    <p>Area</p>
+                    <input type="text" required>
+                    
+                    <p>District</p>
+                    <select name="District" id="district">
+                        <option value="">selectr</option>
+                        <option value="Bangaloar Urban">Bangaloar Urban</option>
+                        <option value="Bangaloar Rural">Bangaloar Rural</option>
+                        <option value="Ramnagar">RamNagar</option>
+                    </select>
+                </article>
+                <article>
+                    <p>Choose the issue Type</p>
+                    <p>Check atleast one box without fail</p>
+                    <input type="checkbox" name="option1" id="c1" value="Over Charge">
+                    <label for="c1">Over charge</label>
+                    <br />
+                    <input type="checkbox" name="option3" id="c2" value="Meter Board Not Working">
+                    <label for="c2">Meter Board Not Working</label>
+                    <br />
+                    <input type="checkbox" name="option3" id="c4" value="Close the Meter">
+                    <label for="c3">Close the Meter</label>
+                    <br />
+                    <input type="checkbox" name="option4" id="c4" value="Hard copy not provided">
+                    <label for="c4">Over charge</label>
+                    <br />    
+                </article>
+                <article>
+                    <p>Is this connection less then 2 month old ?</p>
+                    <input type="radio" name="option" id="c5" value="True" required>
+                    <label for="c5">Yes</label>
+                    <br />
+                    <input type="radio" name="option" id="c6" value="False">
+                    <label for="c6">NO</label>
+                </article>
+                <article>
+                    <p>Describe your Problem :</p>
+                    <textarea name="description" id="" cols="30" rows="10" maxlength="100"></textarea>
+                </article>
+                <article>
+                    <p>When are you available ?</p>
+                    <input type="datetime-local" value="datetime-local" readonly>
+                </article>
+                    <button>Submit</button>
+                    <button>Reset</button>
+            </form>
+            <footer>
+                <p>This form is developed by omkar nale <br /> Only for learing.</p>
+            </footer>
+        </section>
+        
+    </body>
+</html>

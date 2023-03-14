@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Attribute selectors</title>
+        <style>
+            p[class]{
+                background-color: aqua;
+            }
+            div[class="test"]{
+                background-color: brown;
+            }
+            a[class|="pp"]{
+                background-color: yellow;
+            }
+            div[class^="cc"]{
+                background-color: darkblue;
+                color: white;
+            }
+            div[class$="test"]{
+                background-color: darkorange;
+            }
+            div[class*="yes"] {
+                background-color: violet;
+            }
+            h1[class~="yo"]{
+                background-color: teal;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h1>
+            Attribute selectors
+        </h1>
+        <p class="demo">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, esse explicabo blanditiis inventore minima ab recusandae repudiandae itaque, expedita distinctio veritatis aut! Doloribus repellat veniam dicta deserunt ipsa officia inventore! Quibusdam ullam saepe quam rerum, ut ex doloremque voluptatem nobis iusto officia minima temporibus labore aliquam nihil! Accusantium vero, et natus ipsa molestias rem explicabo ea laboriosam quos non deleniti officiis libero blanditiis quis aliquid fugit voluptates adipisci dolorum at quasi nobis laudantium. Vitae ex cum quasi nobis corrupti. Necessitatibus reiciendis ratione sit accusantium illum, voluptatibus velit at eligendi nisi ad qui, aut consequuntur nam temporibus error perspiciatis repellendus deleniti dolor a libero perferendis quibusdam illo. Doloremque, labore nemo! Placeat provident incidunt autem. Voluptate alias dignissimos fuga id natus ea dolorum praesentium maxime sapiente eveniet sint repudiandae error sit quaerat excepturi dolorem neque tempora adipisci deleniti, earum ex necessitatibus enim tenetur exercitationem? Placeat architecto eligendi iusto. Libero, repellat. Veritatis quae unde aperiam, voluptas iure facere, et recusandae aut autem nostrum suscipit quia adipisci libero sint rerum atque non! Libero ad quod quas doloribus animi ducimus, eaque maxime corporis fugit iure eum illum fugiat atque asperiores dignissimos ullam esse minima qui debitis rerum, odio molestias itaque necessitatibus vel. Id, hic at.
+        </p>
+        <div class="test">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas sequi placeat, magnam consequatur earum laborum porro neque reprehenderit est exercitationem eum quod obcaecati sed cumque at, optio explicabo delectus totam.
+        </div>
+        <hr>
+        <a href="#" class="pp_class">Some links</a>
+        <a href="#" class="ppclass">Some links</a>
+        <a href="#" class="pp-class">Some links</a>
+        <a href="#" class="classpp">Some links</a>
+        <hr>
+        <div class="ccclass">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ipsum rerum exercitationem harum architecto neque eos ratione accusantium sed? Reiciendis, labore. Dolore cumque nisi non quas soluta maiores, quisquam libero.
+        </div>
+        <div class="cc_class">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ipsum rerum exercitationem harum architecto neque eos ratione accusantium sed? Reiciendis, labore. Dolore cumque nisi non quas soluta maiores, quisquam libero.
+        </div>
+        <div class="cc-class">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ipsum rerum exercitationem harum architecto neque eos ratione accusantium sed? Reiciendis, labore. Dolore cumque nisi non quas soluta maiores, quisquam libero.
+        </div>
+        <div class="classcc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ipsum rerum exercitationem harum architecto neque eos ratione accusantium sed? Reiciendis, labore. Dolore cumque nisi non quas soluta maiores, quisquam libero.
+        </div>
+        <hr>
+        <hr>
+        <div class="test-class">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quia facilis magni molestias animi quam fugiat laborum sequi dignissimos praesentium? Eveniet est reprehenderit illum, odio architecto iusto nemo enim cupiditate.
+        </div>
+        <div class="class-test">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quia facilis magni molestias animi quam fugiat laborum sequi dignissimos praesentium? Eveniet est reprehenderit illum, odio architecto iusto nemo enim cupiditate.
+        </div>
+        <div class="class_test">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quia facilis magni molestias animi quam fugiat laborum sequi dignissimos praesentium? Eveniet est reprehenderit illum, odio architecto iusto nemo enim cupiditate.
+        </div>
+        <div class="classtest">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quia facilis magni molestias animi quam fugiat laborum sequi dignissimos praesentium? Eveniet est reprehenderit illum, odio architecto iusto nemo enim cupiditate.
+        </div>
+        <hr>
+        <hr>
+        <div class="testyesclass">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quia facilis magni molestias animi quam fugiat laborum sequi dignissimos praesentium? Eveniet est reprehenderit illum, odio architecto iusto nemo enim cupiditate.
+        </div>
+        <div class="classtesyest">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quia facilis magni molestias animi quam fugiat laborum sequi dignissimos praesentium? Eveniet est reprehenderit illum, odio architecto iusto nemo enim cupiditate.
+        </div>
+        <div class="yesclass_test">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quia facilis magni molestias animi quam fugiat laborum sequi dignissimos praesentium? Eveniet est reprehenderit illum, odio architecto iusto nemo enim cupiditate.
+        </div>
+        <div class="classtest_yes">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quia facilis magni molestias animi quam fugiat laborum sequi dignissimos praesentium? Eveniet est reprehenderit illum, odio architecto iusto nemo enim cupiditate.
+        </div>
+        <div class="yes_class_test">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quia facilis magni molestias animi quam fugiat laborum sequi dignissimos praesentium? Eveniet est reprehenderit illum, odio architecto iusto nemo enim cupiditate.
+        </div>
+        <div class="classtest-yes">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quia facilis magni molestias animi quam fugiat laborum sequi dignissimos praesentium? Eveniet est reprehenderit illum, odio architecto iusto nemo enim cupiditate.
+        </div>
+        <hr>
+        <hr>
+        <h1 class="class yo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, perferendis.</h1>
+        <h1 class="testyo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, perferendis.</h1>
+        <h1 class="yo class">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, perferendis.</h1>
+        <h1 class="yo-class">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, perferendis.</h1>
+        <h1 class="class_yo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, perferendis.</h1>
+
+    </body>
+</html>
